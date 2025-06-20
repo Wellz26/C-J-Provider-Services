@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Test - C&J Provider Services</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .test-passed { background-color: #d4edda; color: #155724; }
+        .test-failed { background-color: #f8d7da; color: #721c24; }
+        img { max-width: 200px; height: auto; margin: 5px; border: 1px solid #ccc; }
+        video { max-width: 300px; height: auto; margin: 5px; border: 1px solid #ccc; }
+        .status { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>C&J Provider Services - Website Test Results</h1>
+    
+    <div class="test-section">
+        <h2>Image Availability Test</h2>
+        <p>Testing all images in the img folder:</p>
+        <img src="img/1.jpg" alt="Image 1" onerror="this.style.border='2px solid red'">
+        <img src="img/2.jpg" alt="Image 2" onerror="this.style.border='2px solid red'">
+        <img src="img/energy.jpg" alt="Energy" onerror="this.style.border='2px solid red'">
+        <img src="img/family.jpg" alt="Family" onerror="this.style.border='2px solid red'">
+        <img src="img/love.jpg" alt="Love" onerror="this.style.border='2px solid red'">
+        <img src="img/travel.jpg" alt="Travel" onerror="this.style.border='2px solid red'">
+        <img src="img/logo.svg" alt="Logo" onerror="this.style.border='2px solid red'">
+        <img src="img/logo-small.svg" alt="Logo Small" onerror="this.style.border='2px solid red'">
+        <img src="img/logo-white.svg" alt="Logo White" onerror="this.style.border='2px solid red'">
+    </div>
+    
+    <div class="test-section">
+        <h2>Video Availability Test</h2>
+        <p>Testing videos in the videos folder:</p>
+        <video controls poster="img/family.jpg">
+            <source src="videos/cj-provider-services.mp4" type="video/mp4">
+            <p>Video 1 not available</p>
+        </video>
+        <video controls poster="img/travel.jpg">
+            <source src="videos/family.mp4" type="video/mp4">
+            <p>Video 2 not available</p>
+        </video>
+    </div>
+    
+    <div class="test-section">
+        <h2>CSS and JavaScript Test</h2>
+        <p>Checking if core files load:</p>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js"></script>
+        <div class="status">If this page displays correctly, CSS is working.</div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Navigation Test</h2>
+        <p>Test navigation to all pages:</p>
+        <ul>
+            <li><a href="index.html" target="_blank">Home Page</a></li>
+            <li><a href="about.html" target="_blank">About Page</a></li>
+            <li><a href="services.html" target="_blank">Services Page</a></li>
+            <li><a href="gallery.html" target="_blank">Gallery Page</a></li>
+            <li><a href="contact.html" target="_blank">Contact Page</a></li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h2>Professional Video Player Test</h2>
+        <p>Testing enhanced video player functionality:</p>
+        <div style="max-width: 500px;">
+            <div class="video-player-wrapper" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);">
+                <video id="test-video" controls preload="metadata" poster="img/family.jpg" style="width: 100%; border-radius: 12px;">
+                    <source src="videos/cj-provider-services.mp4" type="video/mp4">
+                    <source src="videos/family.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-controls-overlay" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; transition: all 0.3s ease;">
+                    <button class="play-pause-btn" style="background: rgba(69, 111, 203, 0.9); color: white; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 1.5rem; cursor: pointer;">
+                        ▶
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Test professional video player
+        const testVideo = document.getElementById('test-video');
+        const testPlayBtn = document.querySelector('.play-pause-btn');
+        
+        if (testPlayBtn && testVideo) {
+            testPlayBtn.addEventListener('click', function() {
+                if (testVideo.paused) {
+                    testVideo.play();
+                    this.textContent = '⏸';
+                } else {
+                    testVideo.pause();
+                    this.textContent = '▶';
+                }
+            });
+        }
+        
+        // Show/hide custom controls on hover
+        const wrapper = document.querySelector('.video-player-wrapper');
+        const overlay = document.querySelector('.video-controls-overlay');
+        
+        if (wrapper && overlay) {
+            wrapper.addEventListener('mouseenter', () => {
+                overlay.style.opacity = '1';
+            });
+            
+            wrapper.addEventListener('mouseleave', () => {
+                overlay.style.opacity = '0';
+            });
+        }
+    </script>
+</body>
+</html>

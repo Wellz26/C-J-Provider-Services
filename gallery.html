@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - C&J Provider Services</title>
+    <meta name="description" content="View photos and videos of C&J Provider Services' activities, facilities, and community engagement for individuals with developmental disabilities.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+            <img src="img/logo-small.svg" alt="C&J Provider Services" class="site-logo">
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.svg" alt="C&J Provider Services Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-primary-outline" href="tel:2167989231"><i class="fas fa-phone-alt"></i> (216) 798-9231</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content starts here (for skip link) -->
+    <main id="main-content">
+    
+    <!-- Page Header -->
+    <section class="page-header" aria-label="Page header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Our Gallery</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Intro -->
+    <section class="gallery-intro-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2>Moments That <span>Matter</span></h2>
+                    <p>Welcome to our gallery, where we share moments of joy, growth, and community connection. These images showcase the vibrant lives of the individuals we serve and the dedicated staff who support them every day.</p>
+                    <p>From our day program activities to community outings and special events, each photo represents our commitment to providing meaningful experiences that enhance quality of life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter-section">
+        <div class="container">
+            <div class="gallery-filter text-center">
+                <ul class="filter-options">
+                    <li data-filter="*" class="active">All</li>
+                    <li data-filter=".day-program">Day Program</li>
+                    <li data-filter=".residential">Residential</li>
+                    <li data-filter=".community">Community Events</li>
+                    <li data-filter=".activities">Activities</li>
+                    <li data-filter=".facilities">Our Facilities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="row gallery-items">
+                <!-- Day Program Images -->
+                <div class="col-lg-4 col-md-6 gallery-item day-program">
+                    <div class="gallery-item-wrap">
+                        <a href="img/energy.jpg" class="gallery-popup" title="Art Therapy Session">
+                            <img src="img/energy.jpg" alt="Art Therapy Session" class="img-fluid" onerror="this.src='img/1.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Art Therapy Session</h3>
+                                    <p>Day Program</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item day-program">
+                    <div class="gallery-item-wrap">
+                        <a href="img/love.jpg" class="gallery-popup" title="Cooking Class">
+                            <img src="img/love.jpg" alt="Cooking Class" class="img-fluid" onerror="this.src='img/2.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Cooking Class</h3>
+                                    <p>Day Program</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item day-program">
+                    <div class="gallery-item-wrap">
+                        <a href="img/travel.jpg" class="gallery-popup" title="Music Therapy">
+                            <img src="img/travel.jpg" alt="Music Therapy" class="img-fluid" onerror="this.src='img/1.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Music Therapy</h3>
+                                    <p>Day Program</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Residential Images -->
+                <div class="col-lg-4 col-md-6 gallery-item residential">
+                    <div class="gallery-item-wrap">
+                        <a href="img/family.jpg" class="gallery-popup" title="Community Living">
+                            <img src="img/family.jpg" alt="Community Living" class="img-fluid" onerror="this.src='img/2.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Group Home Living Room</h3>
+                                    <p>Residential</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item residential">
+                    <div class="gallery-item-wrap">
+                        <a href="img/1.jpg" class="gallery-popup" title="Resident Gardening">
+                            <img src="img/1.jpg" alt="Resident Gardening" class="img-fluid" onerror="this.src='img/energy.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Resident Gardening</h3>
+                                    <p>Residential</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item residential">
+                    <div class="gallery-item-wrap">
+                        <a href="img/2.jpg" class="gallery-popup" title="Family Visit">
+                            <img src="img/2.jpg" alt="Family Visit" class="img-fluid" onerror="this.src='img/love.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Family Visit</h3>
+                                    <p>Residential</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Community Images -->
+                <div class="col-lg-4 col-md-6 gallery-item community">
+                    <div class="gallery-item-wrap">
+                        <a href="img/travel.jpg" class="gallery-popup" title="Community Outing">
+                            <img src="img/travel.jpg" alt="Community Outing" class="img-fluid" onerror="this.src='img/family.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Community Picnic</h3>
+                                    <p>Community Events</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item community">
+                    <div class="gallery-item-wrap">
+                        <a href="img/energy.jpg" class="gallery-popup" title="Local Festival">
+                            <img src="img/energy.jpg" alt="Local Festival" class="img-fluid" onerror="this.src='img/1.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Local Festival</h3>
+                                    <p>Community Events</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item community">
+                    <div class="gallery-item-wrap">
+                        <a href="img/love.jpg" class="gallery-popup" title="Volunteering at Food Bank">
+                            <img src="img/love.jpg" alt="Volunteering at Food Bank" class="img-fluid" onerror="this.src='img/2.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Volunteering at Food Bank</h3>
+                                    <p>Community Events</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Activities Images -->
+                <div class="col-lg-4 col-md-6 gallery-item activities">
+                    <div class="gallery-item-wrap">
+                        <a href="img/family.jpg" class="gallery-popup" title="Music Therapy">
+                            <img src="img/family.jpg" alt="Music Therapy" class="img-fluid" onerror="this.src='img/travel.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Arts and Crafts</h3>
+                                    <p>Activities</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item activities">
+                    <div class="gallery-item-wrap">
+                        <a href="img/1.jpg" class="gallery-popup" title="Outdoor Games">
+                            <img src="img/1.jpg" alt="Outdoor Games" class="img-fluid" onerror="this.src='img/energy.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Outdoor Games</h3>
+                                    <p>Activities</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item activities">
+                    <div class="gallery-item-wrap">
+                        <a href="img/2.jpg" class="gallery-popup" title="Birthday Celebration">
+                            <img src="img/2.jpg" alt="Birthday Celebration" class="img-fluid" onerror="this.src='img/love.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Birthday Celebration</h3>
+                                    <p>Activities</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Facilities Images -->
+                <div class="col-lg-4 col-md-6 gallery-item facilities">
+                    <div class="gallery-item-wrap">
+                        <a href="img/energy.jpg" class="gallery-popup" title="Day Program Facility">
+                            <img src="img/energy.jpg" alt="Day Program Facility" class="img-fluid" onerror="this.src='img/travel.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Day Program Facility</h3>
+                                    <p>Our Facilities</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item facilities">
+                    <div class="gallery-item-wrap">
+                        <a href="img/travel.jpg" class="gallery-popup" title="Accessible Transportation">
+                            <img src="img/travel.jpg" alt="Accessible Transportation" class="img-fluid" onerror="this.src='img/family.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Accessible Transportation</h3>
+                                    <p>Our Facilities</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item facilities">
+                    <div class="gallery-item-wrap">
+                        <a href="img/love.jpg" class="gallery-popup" title="Residential Home Exterior">
+                            <img src="img/love.jpg" alt="Residential Home Exterior" class="img-fluid" onerror="this.src='img/1.jpg'">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Residential Home Exterior</h3>
+                                    <p>Our Facilities</p>
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Gallery Section -->
+    <section class="video-gallery-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Video <span>Highlights</span></h2>
+                <p>See our services in action through these short videos</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="video-item">
+                        <div class="video-wrap">
+                            <img src="img/family.jpg" alt="Day Program Activities" class="img-fluid" onerror="this.src='img/1.jpg'">
+                            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="video-popup">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <h3>Day Program Activities</h3>
+                            <p>A day in the life at our Mentor Adult Day Services program.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="video-item">
+                        <div class="video-wrap">
+                            <img src="img/travel.jpg" alt="Transportation Services" class="img-fluid" onerror="this.src='img/2.jpg'">
+                            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="video-popup">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <h3>Transportation Services</h3>
+                            <p>See how our accessible transportation services help individuals stay connected.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="video-item">
+                        <div class="video-wrap">
+                            <img src="img/energy.jpg" alt="Residential Services" class="img-fluid" onerror="this.src='img/love.jpg'">
+                            <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" class="video-popup">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="video-info">
+                            <h3>Residential Services</h3>
+                            <p>Tour our residential homes and see how we create supportive living environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Your Story Section -->
+    <section class="share-story-section">
+        <div class="container">
+            <div class="share-story-box">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2>Share Your Story</h2>
+                        <p>We love sharing moments from our community! If you have photos or videos from your experience with C&J Provider Services that you'd like to contribute to our gallery, please contact us.</p>
+                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <img src="img/logo-white.svg" alt="C&J Provider Services Logo" class="footer-logo">
+                        <p>C&J Provider Services is committed to providing exceptional support services for individuals with developmental disabilities, promoting independence and enhancing quality of life.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/cjproviderservices" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="services.html">Adult Day Services</a></li>
+                            <li><a href="services.html">Transportation Services</a></li>
+                            <li><a href="services.html">Residential Services</a></li>
+                            <li><a href="services.html">Homemaker Personal Care</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 7770 Metric Dr.<br>Mentor, OH 44060, US</li>
+                            <li><i class="fas fa-phone-alt"></i> <a href="tel:2167989231">(216) 798-9231</a></li>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:info@cjproviderservices.com">info@cjproviderservices.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <p>© 2025 C&J Provider Services. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/accessibility.js"></script>
+    <script src="js/schema.js"></script>
+    <script src="js/lazy-loading-fix.js"></script>
+    <script>
+        // Gallery filter functionality
+        $(document).ready(function() {
+            // Initialize Magnific Popup for gallery images
+            $('.gallery-popup').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300,
+                    easing: 'ease-in-out'
+                }
+            });
+
+            // Initialize Magnific Popup for videos
+            $('.video-popup').magnificPopup({
+                type: 'iframe',
+                iframe: {
+                    patterns: {
+                        youtube: {
+                            index: 'youtube.com/',
+                            id: 'v=',
+                            src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                        }
+                    }
+                }
+            });
+
+            // Initialize Isotope for gallery filtering
+            var $grid = $('.gallery-items').isotope({
+                itemSelector: '.gallery-item',
+                percentPosition: true,
+                masonry: {
+                    columnWidth: '.gallery-item'
+                }
+            });
+
+            // Filter items on button click
+            $('.filter-options li').on('click', function() {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+                
+                // Add active class
+                $('.filter-options li').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

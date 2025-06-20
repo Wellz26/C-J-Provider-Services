@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <circle cx="25" cy="25" r="25" fill="#456FCB"/>
+  <path d="M10,20 L25,10 L40,20" stroke="#5FCE99" stroke-width="3" fill="none"/>
+  <path d="M13,18 L13,32 L37,32 L37,18" stroke="#5FCE99" stroke-width="2" fill="none"/>
+  <path d="M23,32 L23,25 L27,25 L27,32" stroke="#5FCE99" stroke-width="2" fill="none"/>
+  <text x="16" y="24" font-family="Arial" font-size="8" font-weight="bold" fill="white">C&amp;J</text>
+</svg>

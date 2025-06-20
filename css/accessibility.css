@@ -1,0 +1,85 @@
+/* 
+==================================================
+C&J Provider Services - Accessibility Stylesheet
+Author: Professional Web Development Team
+Version: 1.0
+==================================================
+*/
+
+/* Skip to content link - hidden visually but available for screen readers */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 15px;
+    z-index: var(--z-top);
+    transition: top 0.3s ease;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: none;
+}
+
+/* Focus visible class for keyboard users */
+.focus-visible {
+    outline: 3px solid var(--secondary-color) !important;
+    outline-offset: 3px;
+}
+
+/* High contrast mode improvements */
+@media (forced-colors: active) {
+    .btn,
+    .navbar-toggler,
+    .back-to-top,
+    .service-card,
+    .testimonial-card,
+    .gallery-link,
+    .social-links a {
+        border: 2px solid currentColor;
+    }
+}
+
+/* Larger click/tap targets for better accessibility */
+.nav-link,
+.btn,
+.service-card,
+.social-links a,
+.footer-links a,
+.back-to-top {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Enhanced text contrast */
+.testimonial-info p,
+.footer-about p,
+.footer-links a,
+.footer-contact a,
+.copyright-text {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Animation pause for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+    
+    .gallery-link img,
+    .gallery-overlay,
+    .gallery-info,
+    .service-card:before,
+    .back-to-top {
+        transition: none !important;
+    }
+    
+    .slick-slider {
+        transition: none !important;
+    }
+}

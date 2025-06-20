@@ -1,0 +1,92 @@
+/* 
+==================================================
+C&J Provider Services - Preloader Stylesheet
+Author: Professional Web Development Team
+Version: 1.0
+==================================================
+*/
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: var(--z-top);
+    transition: opacity 0.5s ease-in-out;
+    will-change: opacity;
+}
+
+.preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    transform: translateZ(0); /* Force hardware acceleration */
+    will-change: transform;
+}
+
+.spinner.loaded {
+    animation: spinner-loaded 0.3s ease-out forwards;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2s infinite ease-in-out;
+    will-change: transform;
+}
+
+.double-bounce2 {
+    background-color: var(--secondary-color);
+    animation-delay: -1.0s;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(0.0); }
+    50% { transform: scale(1.0); }
+}
+
+@keyframes spinner-loaded {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.3); opacity: 0; }
+}
+
+.site-logo {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: pulse 2s infinite;
+    will-change: transform;
+    transform: translateZ(0); /* Force hardware acceleration */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+    }
+}

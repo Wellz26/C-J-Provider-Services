@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <circle cx="150" cy="150" r="150" fill="none"/>
+  <path d="M62,120 L150,60 L238,120" stroke="#5FCE99" stroke-width="10" fill="none"/>
+  <path d="M75,110 L75,190 L225,190 L225,110" stroke="#5FCE99" stroke-width="5" fill="none"/>
+  <path d="M140,190 L140,150 L160,150 L160,190" stroke="#5FCE99" stroke-width="5" fill="none"/>
+  <text x="90" y="145" font-family="Arial" font-size="45" font-weight="bold" fill="white">C&amp;J</text>
+  <text x="105" y="220" font-family="Arial" font-size="18" font-weight="bold" fill="white">PROVIDER</text>
+  <text x="100" y="240" font-family="Arial" font-size="18" font-weight="bold" fill="white">SERVICES</text>
+  <path d="M162,124 L170,110 L178,124" stroke="white" stroke-width="3" fill="none"/>
+</svg>
